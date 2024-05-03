@@ -18,6 +18,9 @@ export const authOptions = {
         } else {
           return null;
         }
+        // <!-- use-this-if-database-is-down -->
+        // const user = { name: "Dean", email: "dean@gmail.com", role: "user" };
+        // return user;
       },
     }),
   ],
@@ -44,4 +47,3 @@ export const authOptions = {
 const handler = NextAuth(authOptions);
 
 export { handler as GET, handler as POST };
-
