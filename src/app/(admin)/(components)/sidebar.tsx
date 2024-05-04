@@ -4,14 +4,16 @@ import {
   CollapsibleContent,
   Collapsible,
 } from "@/components/ui/collapsible";
-
+import { PiSignOutBold } from "react-icons/pi";
+import AdminSignout from "@/app/(admin)/(components)/admin-signout";
+import { Badge } from "@/components/ui/badge";
 export default function Sidebar() {
   return (
     <div className="flex h-screen w-full flex-col bg-gray-100 dark:bg-gray-900">
       <div className="flex h-16 shrink-0 items-center border-b border-gray-200 px-6 dark:border-gray-800">
         <Link className="flex items-center gap-2 font-semibold" href="#">
           <MountainIcon className="h-6 w-6" />
-          <span className="text-gray-900 dark:text-gray-50">Acme Inc</span>
+          <span className="text-gray-900 dark:text-gray-50">MGAE</span>
         </Link>
       </div>
       <div className="flex-1 overflow-y-auto py-4">
@@ -25,7 +27,7 @@ export default function Sidebar() {
           </Link>
           <Link
             className="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50"
-            href="login"
+            href="dashboard"
           >
             <LayoutDashboardIcon className="h-5 w-5" />
             Dashboard
@@ -39,13 +41,13 @@ export default function Sidebar() {
             <CollapsibleContent className="pl-6">
               <Link
                 className="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50"
-                href="#"
+                href="products"
               >
                 All Products
               </Link>
               <Link
                 className="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50"
-                href="#"
+                href="newproduct"
               >
                 New Product
               </Link>
@@ -53,33 +55,37 @@ export default function Sidebar() {
           </Collapsible>
           <Link
             className="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50"
-            href="#"
+            href="customers"
           >
             <UsersIcon className="h-5 w-5" />
             Customers
           </Link>
           <Link
             className="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50"
-            href="#"
+            href="orders"
           >
             <ShoppingCartIcon className="h-5 w-5" />
             Orders
+            <Badge className="ml-auto flex h-6 w-6 shrink-0 items-center justify-center rounded-full">12</Badge>
           </Link>
           <Link
             className="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50"
-            href="#"
+            href="audit-trail"
           >
             <LineChartIcon className="h-5 w-5" />
-            Analytics
+            Audit Trail
           </Link>
           <Link
             className="flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50"
-            href="#"
+            href="settings"
           >
             <SettingsIcon className="h-5 w-5" />
             Settings
           </Link>
         </nav>
+      </div>
+      <div className="mt-auto border-t px-4 py-4">
+        <AdminSignout/>
       </div>
     </div>
   );

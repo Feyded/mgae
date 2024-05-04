@@ -36,7 +36,7 @@ export default function Login() {
     setIsLoading(true);
     const res = await signIn("credentials", formData);
     if (res?.ok) {
-      router.push("/");
+      router.replace("/");
     } else {
       setErrorAlert(true);
     }

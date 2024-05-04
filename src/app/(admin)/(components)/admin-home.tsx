@@ -2,22 +2,14 @@ import { SignoutButton } from "@/components/ui/signout-button";
 import React from "react";
 import Sidebar from "./sidebar";
 
-export function AdminDashboard() {
+export function AdminHome() {
   return (
-    //<div className="flex">'
-    <div>
-      <div className="max-w-50">
+    <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
+      <div className="w-full md:w-64">
         <Sidebar />
       </div>
-      
+      <div className="flex-grow p-6 md:overflow-y-auto md:p-12">Home</div>
     </div>
-    //  <div>
-    //  <h1 className="text-2xl font-bold">
-    //  You're account is <span className="text-emerald-500">admin </span>{" "}
-    //</h1>
-    //<SignoutButton />
-    //</div>
-    //</div>
   );
 }
 

@@ -2,13 +2,13 @@ import Image from "next/image";
 import { SignoutButton } from "@/components/ui/signout-button";
 import { getServerSession } from "next-auth";
 import { authOptions } from "./api/auth/[...nextauth]/route";
-import { AdminDashboard } from "@/app/(admin)/(components)/admindashboard";
+import { AdminHome } from "@/app/(admin)/(components)/admin-home";
 import UserDashboard from "./(client)/(components)/userdashboard";
 export default async function Home() {
   const session = await getServerSession(authOptions);
   console.log(session);
   if (session.user.role === "admin") {
-    return <AdminDashboard />;
+    return <AdminHome />;
   }
   
   return <UserDashboard />;
