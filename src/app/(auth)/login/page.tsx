@@ -117,7 +117,7 @@ export default function Login() {
         </CardContent>
         <CardFooter className="flex justify-center align-center">
           <span className="text-gray-400">
-            Don't have an account?
+            Dont have an account?
             <Button
               className="align-self-start px-2"
               variant="link"

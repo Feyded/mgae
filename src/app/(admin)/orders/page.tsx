@@ -18,6 +18,7 @@ import {
   TableBody,
   Table,
 } from "@/components/ui/table";
+import Image from "next/image";
 
 export default function Orders() {
   return (
@@ -44,7 +45,7 @@ export default function Orders() {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button className="rounded-full" size="icon" variant="ghost">
-                <img
+                <Image
                   alt="Avatar"
                   className="rounded-full"
                   height="32"

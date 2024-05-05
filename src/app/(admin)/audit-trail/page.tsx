@@ -102,7 +102,7 @@ export default function AuditTrail() {
               <TableCell>2023-05-04 10:15 AM</TableCell>
               <TableCell>John Doe</TableCell>
               <TableCell>Product Update</TableCell>
-              <TableCell>Updated product details for "Acme Shirt"</TableCell>
+              <TableCell>Updated product details for Acme Shirt</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>2023-05-03 03:30 PM</TableCell>
@@ -114,13 +114,13 @@ export default function AuditTrail() {
               <TableCell>2023-05-02 09:45 AM</TableCell>
               <TableCell>Bob Johnson</TableCell>
               <TableCell>User Account</TableCell>
-              <TableCell>Deactivated user account for "Alice Williams"</TableCell>
+              <TableCell>Deactivated user account for Alice Williams</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>2023-05-01 11:20 AM</TableCell>
               <TableCell>Sarah Lee</TableCell>
               <TableCell>Product Update</TableCell>
-              <TableCell>Updated inventory for "Acme Pants"</TableCell>
+              <TableCell>Updated inventory for Acme Pants</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>2023-04-30 02:00 PM</TableCell>
@@ -132,7 +132,7 @@ export default function AuditTrail() {
               <TableCell>2023-04-29 04:35 PM</TableCell>
               <TableCell>Emily Davis</TableCell>
               <TableCell>User Account</TableCell>
-              <TableCell>Created new user account for "David Kim"</TableCell>
+              <TableCell>Created new user account for David Kim</TableCell>
             </TableRow>
           </TableBody>
         </Table>

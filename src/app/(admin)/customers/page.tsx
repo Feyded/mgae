@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function Customers() {
   return (
@@ -37,7 +38,7 @@ export default function Customers() {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button className="rounded-full" size="icon" variant="ghost">
-                <img
+                <Image
                   alt="Avatar"
                   className="rounded-full"
                   height="32"
@@ -65,7 +66,7 @@ export default function Customers() {
       <main className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-6">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <Card className="flex flex-col items-center gap-4 rounded-lg border p-4 shadow-sm">
-            <img
+            <Image
               alt="Avatar"
               className="rounded-full"
               height="80"
@@ -88,7 +89,7 @@ export default function Customers() {
             </Badge>
           </Card>
           <Card className="flex flex-col items-center gap-4 rounded-lg border p-4 shadow-sm">
-            <img
+            <Image
               alt="Avatar"
               className="rounded-full"
               height="80"
@@ -111,7 +112,7 @@ export default function Customers() {
             </Badge>
           </Card>
           <Card className="flex flex-col items-center gap-4 rounded-lg border p-4 shadow-sm">
-            <img
+            <Image
               alt="Avatar"
               className="rounded-full"
               height="80"
@@ -136,7 +137,7 @@ export default function Customers() {
             </Badge>
           </Card>
           <Card className="flex flex-col items-center gap-4 rounded-lg border p-4 shadow-sm">
-            <img
+            <Image
               alt="Avatar"
               className="rounded-full"
               height="80"
@@ -161,7 +162,7 @@ export default function Customers() {
             </Badge>
           </Card>
           <Card className="flex flex-col items-center gap-4 rounded-lg border p-4 shadow-sm">
-            <img
+            <Image
               alt="Avatar"
               className="rounded-full"
               height="80"
@@ -186,7 +187,7 @@ export default function Customers() {
             </Badge>
           </Card>
           <Card className="flex flex-col items-center gap-4 rounded-lg border p-4 shadow-sm">
-            <img
+            <Image
               alt="Avatar"
               className="rounded-full"
               height="80"
@@ -211,7 +212,7 @@ export default function Customers() {
             </Badge>
           </Card>
           <Card className="flex flex-col items-center gap-4 rounded-lg border p-4 shadow-sm">
-            <img
+            <Image
               alt="Avatar"
               className="rounded-full"
               height="80"
@@ -234,7 +235,7 @@ export default function Customers() {
             </Badge>
           </Card>
           <Card className="flex flex-col items-center gap-4 rounded-lg border p-4 shadow-sm">
-            <img
+            <Image
               alt="Avatar"
               className="rounded-full"
               height="80"
